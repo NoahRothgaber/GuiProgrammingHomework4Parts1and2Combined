@@ -1,0 +1,113 @@
+/*
+Noah Rothgaber
+02134094
+noah_rothgaber@student.uml.edu
+*/
+#data_form {
+    display: table;
+    padding-left: 28px;
+    /* Add padding to avoid cutting into the input fields with the border */
+    padding-right: 28px;
+    border: 1px solid black;
+}
+
+#range_title {
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+}
+
+label {
+    display: table-cell;
+}
+
+input {
+    display: table-cell;
+    margin-left: 20%;
+}
+
+#row_paragraph {
+    display: table-row;
+}
+
+#columnLBound {
+    color: blue;
+}
+
+#columnUBound {
+    color: red;
+}
+
+#rowLBound {
+    color: green;
+}
+
+#rowUBound {
+    color: darksalmon;
+}
+
+#generate_button {
+    align-items: center;
+    background-color: aliceblue;
+    border-color: aliceblue;
+    align-content: center;
+    margin-left: 25%;
+}
+
+.error-message {
+    color: red;
+    margin-left: 20%;
+    display: block;
+}
+
+#generatedTable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#generatedTable th,
+#generatedTable td {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+#generatedTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#generatedTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.ui-icon-close {
+    cursor: pointer;
+}
+
+#tabs {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#tabs ul {
+    background-color: aliceblue;
+}
+
+#tabs ul li {
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+button#deleteAllTabs {
+    margin-top: 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}

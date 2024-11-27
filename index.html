@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+/*
+Noah Rothgaber
+02134094
+noah_rothgaber@student.uml.edu
+*/ 
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noah's Multiplication Table</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</head>
+<!-- Everything in this is just basic table stuff and some buttons -->
+
+<body>
+  <div id="data_form">
+    <p id="range_title">Please enter the table ranges...</p>
+    <form id="multiplicationForm">
+      <p id="row_paragraph">
+        <label for="columnLBound" id="columnLBound">Column Lower Bound:</label>
+        <input size="5" type="text" id="columnLBoundInput" name="columnLBound">
+      <div id="sliderColumnLBound"></div><br>
+      </p>
+      <p id="row_paragraph">
+        <label for="columnUBound" id="columnUBound">Column Upper Bound:</label>
+        <input size="5" type="text" id="columnUBoundInput" name="columnUBound">
+      <div id="sliderColumnUBound"></div><br>
+      </p>
+      <p id="row_paragraph">
+        <label for="rowLBound" id="rowLBound">Row Lower Bound:</label>
+        <input size="5" type="text" id="rowLBoundInput" name="rowLBound">
+      <div id="sliderRowLBound"></div><br>
+      </p>
+      <p id="row_paragraph">
+        <label for="rowUBound" id="rowUBound">Row Upper Bound:</label>
+        <input size="5" type="text" id="rowUBoundInput" name="rowUBound">
+      <div id="sliderRowUBound"></div><br>
+      </p>
+      <p>
+        <button type="submit" id="generate_button">Generate Table</button>
+      </p>
+    </form>
+  </div>
+
+  <!-- Tabs -->
+  <div id="tabs">
+    <ul>
+      <li><a href="#entry-tab">Current Table Tab Group -></a></li>
+    </ul>
+    <div id="entry-tab">
+      <p>Use the form to generate a multiplication table.</p>
+    </div>
+  </div>
+
+  <button id="deleteAllTabs">Delete All Tabs</button>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
